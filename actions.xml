@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTimedAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimedAction xsi:type="TimedAction_PWM">
+    <Name>STATIC_LIGHT</Name>
+    <PWM_Frequency>200</PWM_Frequency>
+    <PWM_Inverted>true</PWM_Inverted>
+    <active>true</active>
+    <force>false</force>
+    <StartTime>
+      <hour>14</hour>
+      <minute>00</minute>
+    </StartTime>
+    <RampTime>15</RampTime>
+    <LagTime>10</LagTime>
+    <Value_max>50</Value_max>
+    <daystowork>
+      <DayOfWeek>Monday</DayOfWeek>
+      <DayOfWeek>Thursday</DayOfWeek>
+    </daystowork>
+  </TimedAction>
+  <TimedAction xsi:type="TimedAction_Music">
+    <Name>STATIC_RADIO</Name>
+    <active>false</active>
+    <force>false</force>
+    <StartTime>
+      <hour>16</hour>
+      <minute>00</minute>
+    </StartTime>
+    <RampTime>4</RampTime>
+    <LagTime>5</LagTime>
+    <Value_max>50</Value_max>
+    <Stream>http://gffstream.ic.llnwd.net/stream/gffstream_stream_wdr_einslive_a</Stream>
+    <daystowork>
+      <DayOfWeek>Monday</DayOfWeek>
+      <DayOfWeek>Tuesday</DayOfWeek>
+      <DayOfWeek>Wednesday</DayOfWeek>
+      <DayOfWeek>Thursday</DayOfWeek>
+      <DayOfWeek>Friday</DayOfWeek>
+      <DayOfWeek>Saturday</DayOfWeek>
+      <DayOfWeek>Sunday</DayOfWeek>
+    </daystowork>
+  </TimedAction>
+  <TimedAction xsi:type="TimedAction_PWM">
+    <Name>Test1 PWM</Name>
+    <PWM_Frequency>200</PWM_Frequency>
+    <PWM_Inverted>true</PWM_Inverted>
+    <active>true</active>
+    <force>false</force>
+    <StartTime>
+      <hour>14</hour>
+      <minute>00</minute>
+    </StartTime>
+    <RampTime>15</RampTime>
+    <LagTime>20</LagTime>
+    <Value_max>50</Value_max>
+    <daystowork>
+      <DayOfWeek>Monday</DayOfWeek>
+      <DayOfWeek>Thursday</DayOfWeek>
+      <DayOfWeek>Wednesday</DayOfWeek>
+      <DayOfWeek>Saturday</DayOfWeek>
+      <DayOfWeek>Sunday</DayOfWeek>
+      <DayOfWeek>Tuesday</DayOfWeek>
+    </daystowork>
+  </TimedAction>
+  <TimedAction xsi:type="TimedAction_Music">
+    <Name>Test1 Music</Name>
+    <active>false</active>
+    <force>false</force>
+    <StartTime>
+      <hour>16</hour>
+      <minute>00</minute>
+    </StartTime>
+    <RampTime>5</RampTime>
+    <LagTime>5</LagTime>
+    <Value_max>50</Value_max>
+    <Stream>http://gffstream.ic.llnwd.net/stream/gffstream_stream_wdr_einslive_a</Stream>
+    <daystowork>
+      <DayOfWeek>Monday</DayOfWeek>
+      <DayOfWeek>Tuesday</DayOfWeek>
+      <DayOfWeek>Wednesday</DayOfWeek>
+      <DayOfWeek>Thursday</DayOfWeek>
+      <DayOfWeek>Friday</DayOfWeek>
+      <DayOfWeek>Saturday</DayOfWeek>
+      <DayOfWeek>Sunday</DayOfWeek>
+    </daystowork>
+  </TimedAction>
+</ArrayOfTimedAction>

@@ -14,3 +14,4 @@ This is the Web interface for the Raspberry Pi Alarm Clock( JanHBade/RaspberryPi
 ##Config
 
 ###actions.xml
+###read/write access to actions.xml

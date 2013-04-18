@@ -15,9 +15,13 @@ Raspberry Pi Alarm Clock with Web Interface
 
 ##Config
 * Copy index.php and actions.xml to \var\www\wecker
+* Set access rights for actions.xml 'chmod 666 actions.xml'
 * Change mixer_type to 'software' in /etc/mpd.conf
 * Set 'options snd-usb-audio index=0' in /etc/modprobe.d/alsa-base.conf
 * Set volume to 100% with alsamixer
 * store mixer settings with 'alsactl store'
+* Copy AlarmClock.sh to '/etc/init.d/'
+* Make script executable 'chmod 755 /etc/init.d/AlarmClock.sh'
+* Add script to runlevel 'update-rc.d AlarmClock.sh defaults'
 
 

@@ -1,17 +1,23 @@
 RPiAlarmClock
 =============
 
-Raspberry Pi Alarm Clock Web Interface
+Raspberry Pi Alarm Clock with Web Interface
 
+##Setup
+* groupadd www-data
+* usermod -a -G www-data www-data
+* apt-get update
+* apt-get install apache2
+* apt-get install php5
+* apt-get install libapache2-mod-php5 php5 php5-cli php5-common php5-curl php5-dev php5-gd php5-imap php5-ldap php5-mhash php5-mysql php5-odbc
+* WiringPI (https://projects.drogon.net/raspberry-pi/wiringpi/)
 
-This is the Web interface for the Raspberry Pi Alarm Clock( JanHBade/RaspberryPiWakeUp )
-
-##Needed Tools
-* Apache
-* php
-* JanHBade/RaspberryPiWakeUp
 
 ##Config
+* Copy index.php and actions.xml to \var\www\wecker
+* Change mixer_type to 'software' in /etc/mpd.conf
+* Set 'options snd-usb-audio index=0' in /etc/modprobe.d/alsa-base.conf
+* Set volume to 100% with alsamixer
+* store mixer settings with 'alsactl store'
 
-* actions.xml
-* read/write access to actions.xml
+
